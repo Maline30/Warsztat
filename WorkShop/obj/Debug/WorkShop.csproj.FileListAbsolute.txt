@@ -1,0 +1,14 @@
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.csprojAssemblyReference.cache
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.Form1.resources
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.Properties.Resources.resources
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.csproj.GenerateResource.cache
+C:\Users\ja\source\repos\WorkShop\bin\Debug\Database1.mdf
+C:\Users\ja\source\repos\WorkShop\bin\Debug\Database1_log.ldf
+C:\Users\ja\source\repos\WorkShop\bin\Debug\WorkShop.exe.config
+C:\Users\ja\source\repos\WorkShop\bin\Debug\WorkShop.exe
+C:\Users\ja\source\repos\WorkShop\bin\Debug\WorkShop.pdb
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.Properties.Resource1.resources
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.csproj.CoreCompileInputs.cache
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.exe
+C:\Users\ja\source\repos\WorkShop\obj\Debug\WorkShop.pdb
+C:\Users\ja\source\repos\workShop\obj\Debug\WorkShop.WorkShopForm2.resources
