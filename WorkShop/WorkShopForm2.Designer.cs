@@ -44,41 +44,45 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Green;
             this.button1.Location = new System.Drawing.Point(0, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 151);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.Location = new System.Drawing.Point(200, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 151);
             this.button2.TabIndex = 2;
             this.button2.Text = "Historia";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.GhostWhite;
             this.button3.Location = new System.Drawing.Point(400, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 151);
             this.button3.TabIndex = 3;
             this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Orange;
             this.button4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button4.Location = new System.Drawing.Point(200, 159);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(194, 151);
             this.button4.TabIndex = 4;
             this.button4.Text = "Nowe Zlecenie";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -100,13 +104,14 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
             this.button7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button7.Location = new System.Drawing.Point(200, 316);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(194, 151);
             this.button7.TabIndex = 7;
             this.button7.Text = "nie wiem";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
@@ -139,13 +144,15 @@
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.Color.Gray;
             this.button11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button11.Location = new System.Drawing.Point(507, 438);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(87, 29);
             this.button11.TabIndex = 11;
             this.button11.Text = "Exit";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -178,6 +185,7 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WorkShopForm2";
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WorkShopForm2";
             this.ResumeLayout(false);
