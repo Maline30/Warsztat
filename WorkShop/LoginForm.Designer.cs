@@ -40,6 +40,8 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.usersTableAdapter1 = new WorkShop.Database1DataSetTableAdapters.UsersTableAdapter();
+            this.loginDataSet1 = new WorkShop.LoginDataSet();
             buttonSignIn = new System.Windows.Forms.Button();
             btnRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxCenter)).BeginInit();
@@ -47,6 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSignIn
@@ -165,6 +168,7 @@
             this.textBoxPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxPassword.Location = new System.Drawing.Point(73, 185);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(205, 18);
             this.textBoxPassword.TabIndex = 9;
             this.textBoxPassword.Text = "Password";
@@ -189,6 +193,15 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
+            // 
+            // usersTableAdapter1
+            // 
+            this.usersTableAdapter1.ClearBeforeFill = true;
+            // 
+            // loginDataSet1
+            // 
+            this.loginDataSet1.DataSetName = "Database1DataSet";
+            this.loginDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // LoginForm
             // 
@@ -219,6 +232,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,6 +250,8 @@
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBoxPassword;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private Database1DataSetTableAdapters.UsersTableAdapter usersTableAdapter1;
+        private LoginDataSet loginDataSet1;
     }
 }
 

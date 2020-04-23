@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,8 +13,8 @@ using System.Windows.Forms;
 namespace WorkShop
 {
     public partial class LoginForm : Form
-
-    { 
+    {
+        string cs = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\ja\source\repos\Warsztat\WorkShop\Login.mdf; Integrated Security = True";
         public LoginForm()
         {
             InitializeComponent();
@@ -38,27 +39,52 @@ namespace WorkShop
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\ja\source\repos\Warsztat\WorkShop\Login.mdf; Integrated Security = True"); // making connection   
-            string query = "SELECT COUNT(*) FROM Users WHERE Username='" + textBoxUsername + "' AND Password='" + textBoxPassword + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query,con);
-            /* in above line the program is selecting the whole data from table and the matching it with the user name and password provided by user. */
-            
-            DataTable dt = new DataTable(); //this is creating a virtual table  
-            sda.Fill(dt);
-            //if (dt.Rows.Count == 1)
-            if (dt.Rows[0][0].ToString() == "1")
+            SqlConnection mySqlConnection = default(SqlConnection);
+            mySqlConnection = new SqlConnection(cs);
+
+            SqlCommand myCommand = default(SqlCommand);
+
+            myCommand = new SqlCommand("SELECT Username, Password FROM Users WHERE Username = @Username AND @Password = Password");
+
+            SqlParameter uName = new SqlParameter("@Username", SqlDbType.VarChar);
+            SqlParameter uPassword = new SqlParameter("@Password", SqlDbType.VarChar);
+
+            uName.Value = textBoxUsername;
+            uPassword.Value = textBoxPassword;
+
+            myCommand.Parameters.Add(uName);
+            myCommand.Parameters.Add(uPassword);
+
+            myCommand.Connection.Open();
+
+            SqlDataReader myReader = myCommand.ExecuteReader(CommandBehavior.CloseConnection);
+
+            if(myReader.Read() == true)
             {
                 this.Hide();
                 new WorkShopForm2().Show();
-              }
+            }
             else
+            {
                 MessageBox.Show("Invalid username or password");
+            }
+                if(mySqlConnection.State == ConnectionState.Open)
+            {
+                mySqlConnection.Dispose();
+            }
         }
-
+       
         private void btnRegister_Click(object sender, EventArgs e)
-        {
+            {
             this.Hide();
             new RegisterForm().Show();
         }
+
+
     }
 }
+
+
+
+
+

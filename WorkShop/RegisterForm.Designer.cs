@@ -39,6 +39,24 @@
             btnCreateAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // btnCreateAccount
+            // 
+            btnCreateAccount.BackColor = System.Drawing.Color.Snow;
+            btnCreateAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnCreateAccount.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            btnCreateAccount.FlatAppearance.BorderSize = 0;
+            btnCreateAccount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            btnCreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCreateAccount.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            btnCreateAccount.Location = new System.Drawing.Point(12, 318);
+            btnCreateAccount.Name = "btnCreateAccount";
+            btnCreateAccount.Size = new System.Drawing.Size(405, 53);
+            btnCreateAccount.TabIndex = 15;
+            btnCreateAccount.Text = "Create Account";
+            btnCreateAccount.UseCompatibleTextRendering = true;
+            btnCreateAccount.UseMnemonic = false;
+            btnCreateAccount.UseVisualStyleBackColor = false;
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -85,6 +103,7 @@
             this.textBox5.ForeColor = System.Drawing.Color.DarkGray;
             this.textBox5.Location = new System.Drawing.Point(12, 266);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '*';
             this.textBox5.Size = new System.Drawing.Size(405, 25);
             this.textBox5.TabIndex = 5;
             this.textBox5.Text = "Confirm password";
@@ -95,27 +114,10 @@
             this.textBox6.ForeColor = System.Drawing.Color.DarkGray;
             this.textBox6.Location = new System.Drawing.Point(12, 219);
             this.textBox6.Name = "textBox6";
+            this.textBox6.PasswordChar = '*';
             this.textBox6.Size = new System.Drawing.Size(405, 25);
             this.textBox6.TabIndex = 4;
             this.textBox6.Text = "Password";
-            // 
-            // btnCreateAccount
-            // 
-            btnCreateAccount.BackColor = System.Drawing.Color.Snow;
-            btnCreateAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnCreateAccount.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            btnCreateAccount.FlatAppearance.BorderSize = 0;
-            btnCreateAccount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            btnCreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnCreateAccount.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            btnCreateAccount.Location = new System.Drawing.Point(12, 318);
-            btnCreateAccount.Name = "btnCreateAccount";
-            btnCreateAccount.Size = new System.Drawing.Size(405, 53);
-            btnCreateAccount.TabIndex = 15;
-            btnCreateAccount.Text = "Create Account";
-            btnCreateAccount.UseCompatibleTextRendering = true;
-            btnCreateAccount.UseMnemonic = false;
-            btnCreateAccount.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -144,7 +146,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "RegisterForm";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
             this.ResumeLayout(false);
             this.PerformLayout();
