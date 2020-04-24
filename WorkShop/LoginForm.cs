@@ -72,8 +72,10 @@ namespace WorkShop
             {
                 mySqlConnection.Dispose();
             }
+                
         }
        
+        
         private void btnRegister_Click(object sender, EventArgs e)
             {
             this.Hide();

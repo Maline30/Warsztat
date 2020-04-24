@@ -40,7 +40,6 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.usersTableAdapter1 = new WorkShop.Database1DataSetTableAdapters.UsersTableAdapter();
             this.loginDataSet1 = new WorkShop.LoginDataSet();
             buttonSignIn = new System.Windows.Forms.Button();
             btnRegister = new System.Windows.Forms.Button();
@@ -194,10 +193,6 @@
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
             // 
-            // usersTableAdapter1
-            // 
-            this.usersTableAdapter1.ClearBeforeFill = true;
-            // 
             // loginDataSet1
             // 
             this.loginDataSet1.DataSetName = "Database1DataSet";
@@ -250,7 +245,6 @@
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBoxPassword;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private Database1DataSetTableAdapters.UsersTableAdapter usersTableAdapter1;
         private LoginDataSet loginDataSet1;
     }
 }
