@@ -44,10 +44,10 @@ namespace WorkShop
 
             SqlCommand myCommand = default(SqlCommand);
 
-            myCommand = new SqlCommand("SELECT Username, Password FROM Users WHERE Username = @Username AND @Password = Password");
+            myCommand = new SqlCommand("SELECT Username,Password FROM Users WHERE Username='" + textBoxUsername + "' AND Password='" + textBoxPassword + "'");
 
-            SqlParameter uName = new SqlParameter("@Username", SqlDbType.VarChar);
-            SqlParameter uPassword = new SqlParameter("@Password", SqlDbType.VarChar);
+            SqlParameter uName = new SqlParameter("Username", SqlDbType.VarChar);
+            SqlParameter uPassword = new SqlParameter("Password", SqlDbType.VarChar);
 
             uName.Value = textBoxUsername;
             uPassword.Value = textBoxPassword;
